@@ -40,6 +40,9 @@ var htmlTemplate = `
             <a href = "/">Home</a></a>
         </div>    
         <hr>
+        <script>
+            alert('Error Code: 503');
+        </script>
         <div>
             <p><strong>${heading}</strong></p>    
         </div>
