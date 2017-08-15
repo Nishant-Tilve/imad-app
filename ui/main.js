@@ -4,7 +4,7 @@ console.log('Loaded!');
 var image=document.getElementById('darg');
 image.onClick = function(){
     image.style.marginLeft = '100px';
-    image.style.marginRight = '100px';
+    //image.style.marginRight = '100px';
     //image.style.marginTop = 100;
     //image.style.marginBottom = 100;
     
