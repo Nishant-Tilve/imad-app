@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articleOne = {
     heading: 'Nothing',
     title: 'Article One',
-    year: '2017',
+    date: '2017',
     content:`<p>
             Nothing here...lol. Wanna see something?? You can do it yourself though:)<br>
             Happy developing!
