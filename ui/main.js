@@ -12,3 +12,24 @@ image.onclick = function(){
    var interval = setInterval(moveRight,100);
     
 };
+
+//Button
+
+/*make request to counter endpoint
+
+capture request and store it in a variable
+
+render this variable in a correct span.
+*/
+
+var button = document.getElementById('counter');
+
+var counter = 0;
+
+button.onclick = function() {
+    
+    
+    var span = document.getElementById('count');
+    counter++;
+    span.InnerHTML = counter.toString();
+};
