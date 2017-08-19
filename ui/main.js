@@ -31,5 +31,5 @@ button.onclick = function() {
     
     var span = document.getElementById('count');
     counter++;
-    span.InnerHTML = counter.toString();
+    span.innerHTML = counter.toString();
 };
