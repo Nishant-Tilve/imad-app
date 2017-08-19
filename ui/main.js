@@ -27,11 +27,11 @@ var button = document.getElementById('counter');
 button.onclick = function() {
     
     //create requset object
-    var request = new XMLhttpRequest();
+    var request = new XMLHttpRequest();
     
     //capture response
     request.onreadystatechange = function() {
-      if(request.readystate === XMLhttpRequest.DONE) {
+      if(request.readystate === XMLHttpRequest.DONE) {
           //take action
           if(request.status === 200){ //succesful  request.
                 var counter = request.responseText;
