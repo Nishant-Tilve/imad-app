@@ -24,12 +24,25 @@ render this variable in a correct span.
 
 var button = document.getElementById('counter');
 
-var counter = 0;
-
 button.onclick = function() {
     
+    //create requset object
+    var request = new XMLhttpRequest();
     
-    var span = document.getElementById('count');
-    counter++;
-    span.innerHTML = counter.toString();
+    //capture response
+    request.onreadystatechange = function() {
+      if(request.readystste === XMLhttpRequest.DONE) {
+          //take action
+          if(request.status === 200){ //succesful  request.
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+          }
+          //else not done.
+      } 
+    };
+    
+   //make a request
+   request.open('GET','http://nishanttilve.imad.hasura-app.io/counter',true);
+   request.send(null);
 };
